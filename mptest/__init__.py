@@ -1,3 +1,5 @@
+import time
+
 def noop(input):
     return input
 
@@ -60,3 +62,7 @@ def fill_text(id, n):
     """
     for i in range(n):
         print(text)
+
+def use_mem(input):
+    list1 = [9876543210] * 2048*2048*9
+    time.sleep(10)
