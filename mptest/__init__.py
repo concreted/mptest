@@ -63,6 +63,6 @@ def fill_text(id, n):
     for i in range(n):
         print(text)
 
-def use_mem(input):
-    list1 = [9876543210] * 2048*2048*2048
+def use_mem(input, gb):
+    x = bytearray(1024*1024*1000*gb)
     time.sleep(10)
