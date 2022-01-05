@@ -64,5 +64,5 @@ def fill_text(id, n):
         print(text)
 
 def use_mem(input):
-    list1 = [9876543210] * 2048*2048*9
+    list1 = [9876543210] * 2048*2048*2048
     time.sleep(10)
