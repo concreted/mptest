@@ -65,4 +65,3 @@ def fill_text(id, n):
 
 def use_mem(input, gb):
     x = bytearray(1024*1024*1000*gb)
-    time.sleep(10)
