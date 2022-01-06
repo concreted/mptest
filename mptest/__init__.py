@@ -81,4 +81,4 @@ def opencv(input):
 
     r,g,b = cv2.split(img)
     bgr_img = cv2.merge([b,g,r])
-    cv2.imwrite(f"/tmp/{input}", bgr_img)
+    cv2.imwrite(f"/tmp/{input}.jpeg", bgr_img)
