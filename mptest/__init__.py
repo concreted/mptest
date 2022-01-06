@@ -1,4 +1,6 @@
 import time
+import numpy as np
+import cv2
 
 def noop(input):
     return input
@@ -69,3 +71,8 @@ def use_mem(input, units, amount):
         size = size * 1024
     size = size * amount
     x = bytearray()
+
+def opencv(input):
+    rgb_img = np.zeros((500, 500))
+    bgr_img = cv2.cvtColor(rgb_img, cv2.COLOR_RGB2BGR)
+    cv2.imwrite(f"/tmp/{input}", bgr_img)
