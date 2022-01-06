@@ -64,4 +64,4 @@ def fill_text(id, n):
         print(text)
 
 def use_mem(input, gb):
-    x = bytearray(1024*1024*1000*gb)
+    x = bytearray(1024*1024*1024*gb)
