@@ -73,6 +73,6 @@ def use_mem(input, units, amount):
     x = bytearray()
 
 def opencv(input):
-    rgb_img = np.zeros((500, 500))
+    rgb_img = np.zeros((500, 500, 3))
     bgr_img = cv2.cvtColor(rgb_img, cv2.COLOR_RGB2BGR)
     cv2.imwrite(f"/tmp/{input}", bgr_img)
