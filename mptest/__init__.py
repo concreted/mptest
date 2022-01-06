@@ -73,6 +73,12 @@ def use_mem(input, units, amount):
     x = bytearray()
 
 def opencv(input):
-    rgb_img = np.zeros((500, 500, 3))
-    bgr_img = cv2.cvtColor(rgb_img, cv2.COLOR_RGB2BGR)
+    img = np.zeros([200,200,3])
+
+    img[:,:,0] = np.ones([200,200])*255
+    img[:,:,1] = np.ones([200,200])*255
+    img[:,:,2] = np.ones([200,200])*0
+
+    r,g,b = cv2.split(img)
+    bgr_img = cv2.merge([b,g,r])
     cv2.imwrite(f"/tmp/{input}", bgr_img)
